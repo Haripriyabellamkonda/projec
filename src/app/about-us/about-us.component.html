@@ -1,0 +1,300 @@
+<html>
+    <head>
+        <title>About us Page</title>
+        <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+
+.logo {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo img {
+	width: 33%;
+	border: 2px solid white;
+	border-radius: 50px;
+}
+
+
+#search {
+	padding: 5px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+
+.background {
+	background: grey;
+	background-blend-mode: darken;
+	background-size: cover;
+}
+
+.text-big {
+	font-family: 'Piazzolla', serif;
+color: white;
+	font-weight: bold;
+	font-size: 41px;
+	text-align: center;
+}
+
+.text-small {
+	font-family: 'Sansita Swashed',cursive;
+	font-size: 18px;
+	text-align: center;
+color: white;
+}
+.btn {
+	padding: 8px 20px;
+	margin: 7px 0;
+	border: 2px solid white;
+	border-radius: 8px;
+	background: none;
+	color: white;
+	cursor: pointer;
+}
+
+.center {
+	text-align: center;
+}
+
+.text-footer {
+	text-align: center;
+	padding: 10px 0;
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+/* Team Section */
+.team {
+	padding: 80px 0;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 6px;
+	border: 1px solid black;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 300px;
+	height: 250px;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+	width: 20rem;
+	height: 10rem;
+}
+
+.card-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px 5px 0 0;
+}
+
+.card-info {
+	padding: 20px;
+}
+
+.card-name {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+.card-role {
+	font-size: 18px;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 16px;
+	color: #555;
+}
+.img2{
+    border-radius: 25%;
+    justify-content: center;
+    
+}
+
+
+
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li><a href="elearn.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="instructors.html">Instructor Profiles</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact</a></li>
+              <li><a href="inup.html">SignIN/signUP</a></li>
+            </ul>
+          </nav>
+        <section class="background firstsection">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <p class="text-big">About US</p>
+                    <p class="text-small">
+                        Here you will get to know the core members our Vignan University</p>
+                    <br>
+                    <p class="center"><a href="#Order"
+                        style="text-decoration:none;color:white;">
+                        Below are the Core Memebers of Our university</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--   team section -->
+        <section class="team">
+            <h1 class="h-primary center" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Vignan University brings out all abilities, including incapability</h1>
+            <div class="team-cards">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="r.jpg"
+                            alt="User 1">
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-name">Dr. Lavu Rathaiah</h2>
+                        <p class="card-role">Chairman</p>
+                        <p class="card-email">lvurathaiah@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="KDSIR.jpg"
+                            alt="User 2">
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-name">Dr.Lavu.Sri Krishna </h2>
+                        <p class="card-role">Chancellor</p>
+                        <p class="card-email">Lskd@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="vc.jpg"
+                            alt="User 2">
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-name">Dr.P.Nagabhushan</h2>
+                        <p class="card-role">Vice-Chancellor</p>
+                        <p class="card-email">pNagabhushan@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-lg-11 aa">
+            <div class="row" style="border-bottom:2px solid #85C6D8;box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;">
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <br><h4><a><font size="" color="#FF0099">
+    Dean, Academics, Assessment and Awards - Dr. P. M. V. Rao</font></a></h4>
+    <center>
+        
+    <img class="img2"  src="Dean _ E.jpg" width="500px" height="300px"></center>
+    <br><p align="justify">
+    The continuous evaluation consists of periodic tests, mid tests, assignments, presentations and report writing thus covering both quantitative and qualitative techniques. This continuous comprehensive evaluation helps the student to effectively learn and demonstrate the course content. The institute regularly updates its evaluation methods, to realize the objectives of outcome based education. The steps taken to ensure quality, transparency and confidentiality are on par with the best practices adopted by premier institutions in the country.</p></div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br><br></div></div><br>
+    
+    <div class="row" style="border-bottom:2px solid #85C6D8;box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;">
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <br><br><h4><a><font size="" color="#FF0099">
+    Dean, Library & Technology Development - Dr. Y. Ravisekhar</font></a></h4>
+    <center><img class="img2"  src="Dean_RaviSekhar.jpg"width="500px" height="300px"></center>
+    <br><p align="justify">
+    The artistically designed octagonal shaped library with more than 1,01,651 volumes, plenty of audio-visual materials and above 7,009 national & international journals, is indeed a rich repository of knowledge facilitating prospects for future research.IT services in the University provides the core IT systems, tools and services, internet, Wi-Fi facilities that keep the University running day-to-day in support of teaching, learning and research.</p></div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br><br></div></div><br>
+    
+    <div class="row" style="border-bottom:2px solid #85C6D8;box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;">
+    
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <h4><a><font size="" color="#FF0099">
+    Dean, IQAC - Dr. M. Ramakrishna</font></a></h4>
+    <center><img class="img2"  src="ramakrishnasir.jpeg"width="500px" height="300px"></center>
+    <br><p align="justify">
+    With a vision to build and ensure a quality culture aimed at all round excellence at the institutional level, the Internal Quality Assurance Cell(IQAC) was established in VFSTR (Deemed to be University). It involves in developing a mechanism for systematic reviews of study programs, ensuring quality teaching-learning process, research, knowledge generation and support services standards at an acceptable level. VFSTR is known for its excellence in learning, teaching, and research. To ensure accountability and transparency in the quality management system of the institution, a systematic feedback and analysis from its stakeholders mainly students, teachers, non-teaching staff, parents, management, and society is considered to set new quality benchmarks for the sustained growth of the institution.</p></div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br><br></div></div><br>
+    
+    <div class="row" style="border-bottom:2px solid #85C6D8;box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;">
+    
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <h4><a><font size="" color="#FF0099">
+    Dean, Promotion, Collaborations & Faculty Affairs - Dr. D. Vijaya Ramu</font></a></h4>
+    <center><img class="img2"  src="Vijay Ramu1.jpg"width="500px" height="300px"></center>
+    <br> <p align="justify">
+    We have introduced Project Based Learning approach to enable students gain in-depth concepts in the chosen area of their study. The curriculum is meticulously designed with projects arising from a combination of different courses (intra disciplinary projects), projects from different departments (inter-departmental) and Societal Centric projects from I to IV year of the program in addition to a semesterlong industry internship. Also, emphasis is placed on credits for physical fitness, sports and games. All the aforementioned salient features have successfully fortified our curriculum which enables higher percentage of placements and improve opportunities to pursue higher education in premier institutes in India and abroad. The office of International Affairs facilitates international exchange programs for aspiring students to pursue their internship in premier universities abroad.</p></div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br><br></div></div><br>
+    
+    
+    
+    
+    
+    <div class="row" style="border-bottom:2px solid #85C6D8;box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;">
+    
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <br><br><h4><a><font size="" color="#FF0099">
+    Dean, Research & Development - Dr. G. Srinivasa Rao</font></a></h4>
+    <br>
+    <center><img class="img2"  src="Srinivasa Rao.jpg"width="500px" height="300px"></center>
+    <p align="justify">
+    The VFSTR University has a Board of Research and Development with an objective to promote research activities among the faculty members to attain academic excellence. It is our endeavor to make our system effective and sensitive to the needs of all stakeholders by undertaking collaboration with the industry to foster engineering research which is an integral part of the quality of technical education.</p></div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br></div></div><br>
+    
+    
+    <div class="row" style="border-bottom:2px solid #85C6D8;box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;">
+    
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <br><h4><a><font size="" color="#FF0099">
+    Dean, Students Affairs - Dr. M. S. S. Rukmini</font></a></h4>
+    <center><img class="img2"  src="Dean _ SA.jpg"width="500px" height="300px"></center>
+    <br><p align="justify">
+    The Student Welfare Committee (SWC) helps the students in academic, emotional and psychological progression. The IAS Academy, E-cell and GATE Academy trains students to crack national level competitive exams. This is aimed at helping students to become entrepreneurs, to grab employment opportunities available in the public sector as well as plan for post-graduate studies
+    and research.</p></div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br><br></div></div><br>
+    
+    <div class="row" style="border-bottom: 2px solid #06BCEE;  box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;">
+    
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <br><br><h4><a><font size="" color="#FF0099">
+    Dean, Planning and Monitoring - Dr. Jakeer Hussain</font></a></h4>
+    <center><img   class="img2" src="Dean _ Academic.jpg"width="500px" height="300px"></center>
+    <br><p align="justify">
+    VFSTR, being placed in rural vicinity, is attracting students and faculty from various regions and abroad primarily because of the strong foundations laid in culture, curriculum, teaching and learning, infrastructure and placements. To foster and sustain the aforementioned events and to make students excel in their own discipline, day to day monitoring of events are under continuous surveillance by the Office of the Dean, Planning and Monitoring that has come into existence in the month of January, 2017.</p></div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br><br></div></div>
+    
+    
+    
+    <div class="row" style="border-bottom:2px solid #85C6D8;box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;">
+    
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <br><h4><a><font size="" color="#FF0099">
+    Dean, Admissions - Dr. K.V. Krishna Kishore</font></a></h4>
+    <center><img class="img2"  src="Dean _ IT Service.jpg"width="500px" height="300px"></center>
+    <br><p align="justify">
+    VFSTR University lays great emphasis on holistic education that goes beyond the class-rooms, books and examinations. It offers a cultural and social milieu that is unmatched among institutions of higher learning. It provides serene environment for study and offers umpteen opportunities for students to excel in other fields. The University also has a scholarship scheme ranging between 10% to 75% in tuition fee based on academic merit, achievement in sports, economic and social background. Every year it is offering scholarships worth Rs. 3 to 4 crores at the entry level.</p></div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br><br></div></div><br>
+    
+    
+    
+    
+    <div class="row" style="border-bottom:2px solid #85C6D8;box-shadow:10px 10px 5px #ccc;-moz-box-shadow:10px 10px 5px #ccc;-webkit-box-shadow:10px 10px 5px #ccc;-khtml-box-shadow:10px 10px 5px #ccc;"
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> <br><br><h4><a><font size="" color="#FF0099">
+    Dean, Training & Placements - Mr. D. Vijay Krishna</font></a></h4>
+    <center><img class="img2"  src="Dean _ Placements2.jpg"width="500px" height="300px"></center>
+    <br>
+    <p align="justify">
+    The Training & Placements Department of the University gives training and career counseling to the students. Meticulouslydesigned training programs aimed at improving communication, technical and leadership skills are spread through the entire course curriculum so that the students are continuously trained for both placements and for higher studies. The main objective of the Department is to help students in obtaining internships and placements in reputed companies across various industrial sectors.</p></div><div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" ><br><br><br></div></div><br>
+    </body>
+</html>

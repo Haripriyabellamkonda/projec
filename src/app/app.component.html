@@ -1,0 +1,20 @@
+<!-- src/app/app.component.html -->
+
+<div>
+  <h1>{{ title }}</h1>
+  <nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/courses">Courses</a></li>
+      <li><a routerLink="/instructor-profiles">Instructor Profiles</a></li>
+      <li><a routerLink="/about-us">About Us</a></li>
+      <li><a routerLink="/contact-us">Contact Us</a></li>
+      <li><a routerLink="/signup">Sign Up</a></li>
+      <li><a routerLink="/login">Login</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+

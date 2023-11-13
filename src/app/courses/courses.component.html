@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COURSES</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        #all{
+            background-color:aliceblue;
+            font-size: x-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+          #cli{
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0;
+            text-align: center;
+          }
+          th,td{
+            width: 300px;
+            height: 50px;
+          }
+          body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li><a href="elearn.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="instructors.html">Instructor Profiles</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact</a></li>
+              <li><a href="inup.html">SignIN/signUP</a></li>
+            </ul>
+          </nav>
+          <div id="all">
+        <div id="cli">
+            <h1>COURSES AVAILABLE</h1>
+            <table border="1">
+                <tr>
+                    <th>
+                        Course name
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                </tr>
+                <tr>
+                    <td>Artificial Intelligence</td>
+                    <td>280 $</td>
+                </tr>
+                <tr>
+                    <td>Machine Learning</td>
+                    <td>180 $</td>
+                </tr>
+                <tr>
+                    <td>Web Technologies</td>
+                    <td>2080 $</td>
+                </tr>
+                <tr>
+                    <td>Compiler Design</td>
+                    <td>200 $</td>
+                </tr>
+            </table>
+        </div>
+  <h1><center>Course Booking </center></h1>
+  <form action="submit.php" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="course">Course:</label><br>
+    <select id="course" name="course">
+      <option value="Web Technology">Web Technology</option>
+      <option value="Compiler Design">Compiler Design</option>
+      <option value="Machine Learning">Machine Learning</option>
+      <option value="Artificial Intelligence">Artificial Intelligence</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+</div></body>
+</html>
+
+
+

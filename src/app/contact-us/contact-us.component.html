@@ -1,0 +1,251 @@
+<html>
+	<head>
+		<title>Contact Us page</title>
+		<link rel="stylesheet" href="style.css">
+        <style>
+            * {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--navbar-height: 59px;
+}
+
+.logo {
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo img {
+	width: 33%;
+	border: 2px solid white;
+	border-radius: 50px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	cursor: pointer;
+}
+
+.nav-list {
+	width: 70%;
+	display: flex;
+}
+
+.nav-list li {
+	list-style: none;
+	padding: 2px 6px;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-list li a:hover {
+	color: grey;
+}
+
+.rightNav {
+	width: 50;
+	text-align: right;
+}
+
+#search {
+	padding: 5px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+.btn-sm{
+background-color:black;
+}
+
+.background {
+	background-color: grey;
+	background-blend-mode: darken;
+	background-size: cover;
+}
+
+.box-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	max-width: 50%;
+	margin: auto;
+	height: 80%;
+}
+
+.text-big {
+	font-family: "Piazzolla", serif;
+	font-weight: bold;
+	font-size: 41px;
+	text-align: center;
+}
+.center {
+	text-align: center;
+}
+
+.text-footer {
+	text-align: center;
+	padding: 30px 0;
+	font-family: "Ubuntu", sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.text-small,
+.center {
+	color: #333;
+}
+
+.nav-list li a:hover {
+	color: #555;
+}
+
+
+.btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.btn-primary {
+	background-color: #3498db;
+}
+
+.btn:hover {
+	background-color: #2980b9;
+}
+
+#service {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px auto;
+}
+
+
+.h-primary {
+	font-family: "Montserrat", sans-serif;
+	color: #333;
+}
+
+.contact-card {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	transition: transform 0.3s, box-shadow 0.3s;
+	margin: 20px;
+}
+
+.contact-card img {
+	max-width: 80px;
+}
+
+.contact-card h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+.card-text {
+	font-size: 16px;
+	margin: 15px 0;
+	color: #555;
+}
+
+.phone-number {
+	font-size: 18px;
+	color: #333;
+	margin-top: 5px;
+}
+
+.contact-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+        </style>
+	</head>
+	<body>
+		<nav>
+            <ul>
+              <li><a href="elearn.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="instructors.html">Instructor Profiles</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact</a></li>
+              <li><a href="inup.html">SignIN/signUP</a></li>
+            </ul>
+          </nav>
+		<section class="background firstsection">
+			<div class="box-main">
+				<div class="firstHalf">
+					<p class="text-big">Contact Us</p>
+					<p class="text-small">
+						We're here to assist you. Reach out using one of these options.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="service">
+			<h1 class="h-primary center" style="margin-top:30px;">
+				Best Ways to Reach Us
+			</h1>
+			<div id="service">
+				<div class="contact-card">
+					<img src=
+"https://cdn.iconscout.com/icon/free/png-256/free-reading-book-2130818-1794963.png"
+					alt="form_image">
+					<h2>Online Form</h2>
+					<p class="card-text">
+						Use our user-friendly online form to submit your inquiry.
+					</p>
+                    <a routerLink="/fillform" class="btn btn-primary">Fill Form</a>
+					<a href="#" class="btn btn-primary" onclick="window.location.href = 'fillform.html';">Fill Form</a>
+				</div>
+				<div class="contact-card">
+					<img src=
+"https://clouddevs.com/3dbay/files/preview/1280x1112/
+11663147191hdb3bsfnxjvd1lb84afobshwzdsittsvqixbjw72gqklloxogh2o
+cwopwcn0abcimhkqasth8y8n0f4qp9o2k0aisqdeoiw8y4ys.png"
+						alt="email_image">
+					<h2>Email</h2>
+					<p class="card-text">
+						Send us an email anytime. We usually respond within 24 hours.
+					</p>
+					<a href="mailto:vignan@gmail.com" class="btn btn-primary">
+					Email Us</a>
+				</div>
+				<div class="contact-card">
+					<img src=
+"https://cdn.pixabay.com/photo/2013/07/12/12/58/dial-phone-146639_1280.png"
+					alt="phone_image">
+					<h2>Toll-Free Number</h2>
+					<p class="card-text">
+						Reach our support team via our 24/7 toll-free number.
+					</p>
+					<p class="phone-number">Call: +0863-2344 700.</p>
+				</div>
+			</div>
+		</section>
+		<footer class="background">
+			<p class="text-footer">
+				© 2023 Vignan University. All rights reserved.
+			</p>
+		</footer>
+	</body>
+</html>

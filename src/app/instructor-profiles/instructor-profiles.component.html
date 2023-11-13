@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <title>PROFILES-INSTRUCTORS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: #fbf0b2;
+        }
+        table{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0;
+            text-align: center;
+            font-size:x-large;
+        }
+        th,td,tr{
+            width: 500px;
+            height: 100px;
+        }
+        .image-container {
+    width: 410px;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    
+   
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+@keyframes fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="elearn.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="instructors.html">Instructor Profiles</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="inup.html">SignIN/signUP</a></li>
+        </ul>
+      </nav>
+    <table>
+        <tr>
+            <td><div class="image-container"><img src="ai.jpg" alt="" width="500px" height="500px"></div></td>
+            <td><div class="image-container"><img src="ml.jpg" alt=""width="500px" height="500px"></div></td>
+            <td><div class="image-container"><img src="wt.jpg" alt=""width="500px" height="500px"></div></td>
+            <td><div class="image-container"><img src="cd.jpg" alt=""width="500px" height="500px"></div></td>
+        </tr>
+        <tr>
+            <td><a href="https://vignan.ac.in/deologin/uploads/22CS301-CSE.pdf" target = "new">Artificial_intelligence</a></td>
+            <td><a href="https://vignan.ac.in/deologin/uploads/22CS303-CSE.pdf" target = "new">Machine_learning</a></td>
+            <td><a href="https://vignan.ac.in/deologin/uploads/22CS302%20-CSE.pdf" target = "new">Web Technology</a></td>
+            <td><a href="https://www.vignan.ac.in/r21/21ME105.pdf" target="new">Compiler Design</a></td>
+        </tr>
+        <tr>
+            <td> NAME:<a href="aboutus.html">Mr.Gandhi</a></td>
+            <td> NAME:<a href="aboutus.html">Mr.Badar Shah</a></td>
+            <td> NAME:<a href="aboutus.html">Ms.Bhargavi</a></td>
+            <td> NAME:<a href="aboutus.html">Mr.Pavan</a></td>
+        </tr>
+        <tr>
+            <td>EXPERIENCE : 12YEARS</td>
+            <td>EXPERIENCE : 10YEARS</td>
+            <td>EXPERIENCE : 15YEARS</td>
+            <td>EXPERIENCE : 12YEARS</td>
+        </tr>
+        <tr>
+            <td>QUALIFICATION: PHD</td>
+            <td>QUALIFICATION: MTECH</td>
+            <td>QUALIFICATION: PHD</td>
+            <td>QUALIFICATION: MTECH</td>
+        </tr>
+    </table>
+</body>

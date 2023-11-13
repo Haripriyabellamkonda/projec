@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html ng-app="registrationApp">
+
+<head>
+    <title>VIGNAN E-LEARN</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        * {
+            margin: 0px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: aliceblue;
+            margin-top: 8px;
+        }
+
+        .container h1 {
+            margin: 15px;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .registartion-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            background-color: #006ba8;
+            padding: 20px;
+        }
+
+        .registartion-form input,
+        .registartion-form select,
+        .registartion-form textarea {
+            border: none;
+            padding: 5px;
+            margin-top: 8px;
+        }
+
+        .registartion-form .submit {
+            width: 100%;
+            padding: 8px 0;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            background-color: #e77676;
+            border-radius: 5px;
+        }
+
+        .registartion-form .submit:hover {
+            box-shadow: 3px 3px 6px aliceblue(255, 214, 176);
+        }
+    </style>
+</head>
+
+<body ng-controller="registrationController">
+    <nav>
+        <ul>
+            <li><a href="elearn.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructor Profiles</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="inup.html">SignIN/signUP</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>VIGNAN E-LEARN</h1>
+        <h1>REGISTER HERE</h1>
+        <form name="registration" class="registartion-form" ng-submit="formValidation()">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" name="name" id="name" ng-model="user.name" placeholder="your name"
+                            required></td>
+               <!-- Add similar ng-model and required attributes for other form fields -->
+<tr>
+    <td><label for="email">Email:</label></td>
+    <td><input type="email" name="email" id="email" ng-model="user.email" placeholder="your email" required></td>
+</tr>
+<tr>
+    <td><label for="password">Password:</label></td>
+    <td><input type="password" name="password" id="password" ng-model="user.password" required></td>
+</tr>
+<tr>
+    <td><label for="phoneNumber">Phone Number:</label></td>
+    <td><input type="tel" name="phoneNumber" id="phoneNumber" ng-model="user.phoneNumber" required></td>
+</tr>
+<tr>
+    <td><label for="BRANCH">Branch:</label></td>
+    <td>
+        <select name="BRANCH" id="BRANCH" ng-model="user.branch" required>
+            <option value="">Select Branch</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="EEE">EEE</option>
+            <option value="ECE">ECE</option>
+            <option value="CS-AI/ML">CS-AI/ML</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td><label for="gender">Gender:</label></td>
+    <td>
+        <input type="radio" name="gender" value="male" ng-model="user.gender" required>Male
+        <input type="radio" name="gender" value="female" ng-model="user.gender" required>Female
+        <input type="radio" name="gender" value="other" ng-model="user.gender" required>Other
+    </td>
+</tr>
+<tr>
+    <td><label for="language">Language</label></td>
+    <td>
+        <select name="language" id="language" ng-model="user.language" required>
+            <option value="">Select language</option>
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Russian">Russian</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td><label for="rid">Registration ID:</label></td>
+    <td><input type="text" name="rid" id="rid" ng-model="user.rid" required></td>
+</tr>
+<tr>
+    <td><label for="Address">Address:</label></td>
+    <td><textarea name="Address" id="Address" placeholder="Current living area" ng-model="user.address" required></textarea></td>
+</tr>
+
+                <tr>
+                    <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script>
+        var app = angular.module('registrationApp', []);
+
+        app.controller('registrationController', function ($scope) {
+            $scope.formValidation = function () {
+                $scope.formValidation = function () {
+    // Validation logic
+    if (!$scope.user.name) {
+        alert("Please enter your name!");
+        return false;
+    }
+
+    if (!isValidEmail($scope.user.email)) {
+        alert("Please enter a valid email!");
+        return false;
+    }
+
+    if (!$scope.user.password || $scope.user.password.length < 5 || $scope.user.password.length > 15) {
+        alert("Password length must be between 5-15 characters!");
+        return false;
+    }
+
+    if (!isValidPhoneNumber($scope.user.phoneNumber)) {
+        alert("Phone number must be a 10-digit number, and the first digit can't be 0!");
+        return false;
+    }
+
+    if (!$scope.user.gender) {
+        alert("Please select your gender!");
+        return false;
+    }
+
+    if (!$scope.user.language) {
+        alert("Please select your language!");
+        return false;
+    }
+
+    if (!$scope.user.branch) {
+        alert("Please select your Branch!");
+        return false;
+    }
+
+    if (!$scope.user.rid) {
+        alert("Please enter your register number!");
+        return false;
+    }
+
+    if (!$scope.user.address) {
+        alert("Please enter your address!");
+        return false;
+    }
+
+    alert('REGISTERED SUCCESSFULLY');
+    return true;
+};
+
+function isValidEmail(email) {
+    // Regular expression for validating an Email
+    var emailRegex = /\S+@\S+\.\S+/;
+    return emailRegex.test(email);
+}
+
+function isValidPhoneNumber(phoneNumber) {
+    // Regular expression for validating a 10-digit phone number
+    var phoneRegex = /^[1-9][0-9]{9}$/;
+    return phoneRegex.test(phoneNumber);
+}
+
+                alert('REGISTERED SUCCESSFULLY');
+                return true;
+            };
+        });
+    </script>
+</body>
+
+</html>

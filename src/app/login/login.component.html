@@ -1,0 +1,17 @@
+<!-- src/app/login/login.component.html -->
+
+<div id="start">
+    <div class="centered-form">
+      <form (ngSubmit)="check()" #loginForm="ngForm">
+        <input type="text" id="ID" name="ID" placeholder="Enter ID" [(ngModel)]="username" required>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Enter Password" [(ngModel)]="password" required>
+        <br>
+        <button type="submit">SIGN-IN</button>
+        <br>
+        Don't have an account, to sign up
+        <button type="button" routerLink="/registration">CLICK HERE</button>
+      </form>
+    </div>
+  </div>
+  
